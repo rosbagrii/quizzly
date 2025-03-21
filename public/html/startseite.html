@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quizzly</title>
+    <link rel="icon" href="/img/logo.jpg" type="image/x-icon">
+    <link rel="stylesheet" type="text/css" href="/css/startseite.css">
+</head>
+<body>
+
+    <div id="navbar">
+        <a id="homepage-link" href="startseite.html">Quizzly</a>
+        <div id="logo-box">
+            <img src="/img/logo.jpg" id="logo">
+        </div>
+    </div>
+
+    <div id="content">
+        <div id="container">
+            <p id="text">Lerne schnell und mit Spaß!</p>
+            <button id="loginBtn" class="popup-toggle" data-target="login-popup">Login</button>
+            <button class="popup-toggle" data-target="register-popup">Registrieren</button>
+        </div>
+    </div>
+
+
+    <div id="register-popup" class="inputField">
+        <div class="close-popup"><p class="x">X</p></div>
+        <form id="registerForm" method="post">
+            <input id="register-nickname" name="nickname" type="text" placeholder="Nickname" required>
+            <input id="register-username" name="username" type="text" placeholder="Username" required autocomplete="username">
+            <input id="register-password" name="password" type="password" placeholder="Password" required autocomplete="new-password">
+            <input id="register-subject" name="subject" type="text" placeholder="Subject" required>
+            <input id="register-submit" type="submit" value="Registrieren">
+        </form>    
+    </div>
+
+    <div id="login-popup" class="inputField">
+        <div class="close-popup"><p class="x">X</p></div>
+        <form id="loginForm" method="post">
+            <input id="login-username" name="username" type="text" placeholder="Username" required autocomplete="username">
+            <input id="login-password" name="password" type="password" placeholder="Password" required autocomplete="new-password">
+            <input id="login-submit" type="submit" value="Login">
+        </form>    
+    </div>
+
+    <div id="footer">
+
+        <div id="footer-info-container">
+            <div class="footer-info">
+                <a href="aboutUs.html" class="footer-info-text">Über uns</a>
+                <a href="datenschutz.html" class="footer-info-text">Datenschutz</a>
+                <a href="cookies.html" class="footer-info-text">Cookies</a>
+            </div>
+            <div class="footer-info">
+                    <a href="impressum.html" class="footer-info-text">Impressum</a>
+                    <a href="faqs.html" class="footer-info-text">FAQs</a>
+            </div>
+        </div>
+
+
+
+
+        <div id="footer-logo">
+            <img src="/img/logo.jpg" id="footer-img">
+        </div>
+
+        <div id="slogan-div">
+            <p id="footer-heading">Lerne schnell und mit Spaß!</p>
+        </div>
+
+    </div>
+
+
+    <script type="text/javascript" src="/js/startseite.js"></script>
+</body>
+</html>

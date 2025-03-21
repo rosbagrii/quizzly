@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FAQs</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            margin: 0;
+            background-color: rgb(209, 210, 195);
+        }
+        .container {
+            width: 50vw;
+            height: 40vw;
+            margin: auto;
+            background: white;
+            padding: 1%;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+        h1 {
+            font-size: 1.8vw;
+        }
+
+        h2 {
+            font-size: 1.3vw;
+        }
+
+        p {
+            font-size: 0.95vw;
+        }
+
+        ul {
+            font-size: 0.95vw;
+        }
+
+        #navbar {
+            height: 5vw;
+            background-color: rgb(25, 77, 76);
+            display: flex;
+            align-items: center;
+            font-size: 2.5vw;
+            justify-content: center;
+            gap: 1%;
+            margin-bottom: 15px;
+        }
+
+        #homepage-link{
+            text-decoration: none;
+            color: black;
+        }
+
+
+        #logo-box {
+            height: 80%;
+            width: 4%;
+        }
+
+        #logo {
+            height: 100%;
+            width: 100%;
+            object-fit: cover;
+        }
+
+        #footer {
+            height: 18vw;
+            background-color: rgb(25, 77, 76);
+            margin-top: auto;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            padding: 0 10% 0 5%;
+            gap: 5%;
+            margin-top: 15px;
+        }
+
+        #footer-logo {
+            height: 80%;
+            width: 17%;
+            margin-left: 10%;
+        }
+
+        #footer-img {
+            height: 100%;
+            width: 100%;
+            object-fit: cover;
+        }
+
+        .footer-info {
+            max-height: 100%;
+            width: 30%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+            overflow: hidden;
+            gap: 7%;
+        }
+
+        #footer-info-container {
+            height: 100%;
+            width: 30%;
+            display: flex;
+            justify-content: center;
+            font-size: 1.3vw;
+            gap: 10%;
+        }
+
+        .footer-info-text {
+            margin-bottom: 1%;
+            text-decoration: none;
+            color: black;
+        }
+
+        .footer-info-text:hover {
+            color: rgb(209, 210, 195);
+        }
+
+        #slogan-div {
+            font-size: 2vw;
+            display: flex;
+            justify-content: center;
+        }
+
+        #footer-heading {
+            font-size: 2vw;
+        }
+    </style>
+</head>
+<body>
+
+    <div id="navbar">
+        <a id="homepage-link" href="startseite.html">Quizzly</a>
+        <div id="logo-box">
+            <img src="/img/logo.jpg" id="logo">
+        </div>
+    </div>
+
+    <div class="container">
+        <h1>Häufig gestellte Fragen (FAQs)</h1>
+        
+        <div class="faq">
+            <h2>Frage 1: Wie kann ich mich registrieren?</h2>
+            <p>Sie können sich ganz einfach auf unserer Webseite registrieren, indem Sie auf den „Registrieren“-Button klicken und Ihre Daten eingeben.</p>
+        </div>
+        
+        <div class="faq">
+            <h2>Frage 2: Wie füge ich eine Frage zu dem Katalog?</h2>
+            <p>Klicken Sie auf der Seite "Userpage" auf den Button "Fragen hinzufügen."</p>
+        </div>
+        
+        <div class="faq">
+            <h2>Frage 3: Wie kann ich den Support kontaktieren?</h2>
+            <p>Sie können uns jederzeit per E-Mail erreichen. Diese finden Sie im Impressum.</p>
+        </div>
+    </div>
+
+    <div id="footer">
+
+        <div id="footer-info-container">
+            <div class="footer-info">
+                <a href="aboutUs.html" class="footer-info-text">Über uns</a>
+                <a href="datenschutz.html" class="footer-info-text">Datenschutz</a>
+                <a href="cookies.html" class="footer-info-text">Cookies</a>
+            </div>
+            <div class="footer-info">
+                    <a href="impressum.html" class="footer-info-text">Impressum</a>
+                    <a href="faqs.html" class="footer-info-text">FAQs</a>
+            </div>
+        </div>
+
+
+
+
+        <div id="footer-logo">
+            <img src="/img/logo.jpg" id="footer-img">
+        </div>
+
+        <div id="slogan-div">
+            <p id="footer-heading">Lerne schnell und mit Spaß!</p>
+        </div>
+
+    </div>
+
+</body>
+</html>

@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PvP Lobby</title>
+    <link rel="stylesheet" href="/css/together-lobby.css">
+</head>
+<body>
+
+    <div id="navbar">
+        <a id="homepage-link" href="startseite.html"><p>Quizzly</p></a>
+        <div id="logo-box">
+            <img src="/img/logo.jpg" id="logo">
+        </div>
+    </div>
+
+
+    <div id="main-container">
+
+        <div id="left-section">
+            <div id="lobby-container">
+                <h1 id="lobby-heading">Lobby</h1>
+                <p id="lobby-id"></p>
+                <div id="players-list">
+                    <h3 id="player-count">Spieler in der Lobby:</h3>
+                    <ul id="players"></ul>
+                </div>
+
+
+                <div id="dropdown-box">
+                    <label for="dropdown">Wähle dein Fach:</label>
+                    <select id="dropdown">
+                        <option value="1">Informatik</option>
+                        <option value="2">Biologie</option>
+                        <option value="3">Physik</option>
+                        <option value="4">Philosophie</option>
+                    </select>
+                </div>
+
+
+
+                <button id="start-game" disabled>Spiel starten</button>
+            </div>
+        </div>
+
+
+        <div id="right-section">
+            <div id="container">
+
+                <div id="question-box">
+                    <p id="question">Hier kommt die Frage</p>
+                </div>
+        
+                <div id="options-box">
+                    <label class="game-label">
+                        <input class="checkbox" type="checkbox">
+                        <span class="options" id="option1">Antwortmöglichkeit 1</span>
+                    </label>
+                    <label class="game-label">
+                        <input class="checkbox" type="checkbox">
+                        <span class="options" id="option2">Antwortmöglichkeit 2</span>
+                    </label>
+                    <label class="game-label">
+                        <input class="checkbox" type="checkbox">
+                        <span class="options" id="option3">Antwortmöglichkeit 3</span>
+                    </label>
+                </div>
+        
+                <div id="button-div">
+                    <button class="navigation-buttons" id="check">Antwort prüfen</button>
+                    <button class="navigation-buttons" id="next">Nächste Frage</button>
+                </div>
+        
+            </div>
+        </div>
+
+    </div>
+
+    <div id="footer">
+
+        <div id="footer-info-container">
+            <div class="footer-info">
+                <a href="aboutUs.html" class="footer-info-text">Über uns</a>
+                <a href="datenschutz.html" class="footer-info-text">Datenschutz</a>
+                <a href="cookies.html" class="footer-info-text">Cookies</a>
+            </div>
+            <div class="footer-info">
+                    <a href="impressum.html" class="footer-info-text">Impressum</a>
+                    <a href="faqs.html" class="footer-info-text">FAQs</a>
+            </div>
+        </div>
+
+
+
+
+        <div id="footer-logo">
+            <img src="/img/logo.jpg" id="footer-img">
+        </div>
+
+        <div id="slogan-div">
+            <p id="footer-heading">Lerne schnell und mit Spaß!</p>
+        </div>
+
+    </div>
+
+
+
+
+
+
+
+
+
+
+
+
+    <script src="/socket.io/socket.io.js"></script>
+    <script src="/js/together-lobby.js"></script>
+</body>
+</html>

@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="/css/user-page.css">
+</head>
+<body>
+
+    <div id="navbar">
+        <div id="question-container">
+            <p id="add-questions">Fragen hinzufügen</p>
+            <div class="icon-div"><img class="icons" src="/img/pencil.png"></div>
+            <a id="questions-link" href="questions.html">Fragenkatalog</a>
+            <div class="icon-div"><img class="icons" src="/img/book.png"></div>
+        </div>
+
+        <div id="homepage-container">
+            <a id="homepage-link" href="startseite.html"><p>Quizzly</p></a>
+            <div id="logo-box">
+                <img src="/img/logo.jpg" id="logo">
+            </div>
+
+        </div>
+
+        <div id="logout-div">
+            <p id="logout">Abmelden</p>
+            <div id="icon-logout"><img class="icons" src="/img/logout.png"></div>
+        </div>
+        
+    </div>
+    
+    <div id="content">
+        <div id="container">
+            <h1 id="welcome-text">Willkommen <span id="username"></span>!</h1>
+            <p id="score-text">Dein Rank: <span id="score"></span></p>
+    
+            <div class="image-upload-container">
+                <div id="img-preview-div"><img id="image-preview" class="image-preview" src="/img/avatar.png" alt="Profilbild"></div>
+                <label for="file-input" id="file-label">Profilbild hinzufügen</label>
+                <input type="file" id="file-input" accept="image/*">
+            </div>
+    
+            <div id="mode-box">
+                <button id="learn-mode" class="mode-btn">Einzelspiel</button>
+                <button id= "together-mode" class="mode-btn">Gemeinsam lernen</button>
+                <button id="pvp-mode" class="mode-btn">PvP</button>
+            </div>
+        </div>
+
+    </div>
+ 
+
+
+    <div id="footer">
+
+        <div id="footer-info-container">
+            <div class="footer-info">
+                <a href="aboutUs.html" class="footer-info-text">Über uns</a>
+                <a href="datenschutz.html" class="footer-info-text">Datenschutz</a>
+                <a href="cookies.html" class="footer-info-text">Cookies</a>
+            </div>
+            <div class="footer-info">
+                    <a href="impressum.html" class="footer-info-text">Impressum</a>
+                    <a href="faqs.html" class="footer-info-text">FAQs</a>
+            </div>
+        </div>
+
+
+
+
+        <div id="footer-logo">
+            <img src="/img/logo.jpg" id="footer-img">
+        </div>
+
+        <div id="slogan-div">
+            <p id="footer-heading">Lerne schnell und mit Spaß!</p>
+        </div>
+
+    </div>
+
+
+    <div id="question-popup">
+        <div id="close-div"><p id="close">&times;</p></div>
+        <form id="questionForm" method="post">
+            <label for="question" class="question-label">Frage:</label>
+            <input class="question-input" id="question" type="text" placeholder="Hier kommt die Frage" required>   
+            <div class="option-group">
+                <label class="question-label">Antwortmöglichkeit 1:</label>
+                <input class="question-input" id="option1" type="text" placeholder="Antwortmöglichkeit a" required>
+                <label class="chose">
+                    <input class="chose-correct" type="radio" name="correctOption" value="0" required>
+                    Richtig
+                </label>
+            </div>
+    
+            <div class="option-group">
+                <label class="question-label">Antwortmöglichkeit 2:</label>
+                <input class="question-input" id="option2" type="text" placeholder="Antwortmöglichkeit b" required>
+                <label class="chose">
+                    <input class="chose-correct" type="radio" name="correctOption" value="1" required>
+                    Richtig
+                </label>
+            </div>
+    
+            <div class="option-group">
+                <label class="question-label">Antwortmöglichkeit 3:</label>
+                <input class="question-input" id="option3" type="text" placeholder="Antwortmöglichkeit c" required>
+                <label class="chose">
+                    <input class="chose-correct" type="radio" name="correctOption" value="2" required>
+                    Richtig
+                </label>
+            </div>
+    
+            <label for="subject" class="question-label">Studiengang:</label>
+            <input class="question-input" id="subject" type="text" placeholder="Fachrichtung" required>
+    
+            <button id="submit-question" type="submit">Absenden</button>
+        </form>
+    </div>
+
+    
+    <script type="text/javascript" src="/js/user-page.js"></script>
+</body>
+</html>

@@ -1,0 +1,356 @@
+body {
+    margin: auto;
+    flex-direction: column;
+    display: flex;
+    flex-direction: column;
+    user-select: none;
+}
+
+#navbar {
+    height: 5vw;
+    background-color: rgb(25, 77, 76);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 2% 0 2%;
+}
+
+
+#logo-box {
+    height: 80%;
+    width: 13%;
+}
+
+#logo {
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+}
+
+#question-container {
+    height: 100%;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: left;
+    gap: 3%;
+}
+
+#homepage-container {
+    height: 5vw;
+    width: 30vw;
+    position: absolute;
+    left: 50vw;
+    transform: translateX(-50%);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 3%;
+}
+
+
+#add-questions {
+    left: 100px;
+    cursor: pointer;
+    font-size: 1.3vw;
+}
+
+#add-questions:hover {
+    color: rgb(209, 210, 195);
+}
+
+#questions-link:hover {
+    color: rgb(209, 210, 195);
+}
+
+#question-popup {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    height: 35vw;
+    width: 35vw;
+    background-color: rgb(25, 77, 76);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    display: none;
+}
+
+.option-group {
+    height: 15%;
+    width: 65%;
+}
+
+#welcome-text {
+    font-size: 2vw;
+}
+
+#score {
+    font-size: 1vw;
+}
+
+#score-text {
+    font-size: 1vw;
+    margin: 0;
+}
+
+.question-input {
+    height: 25%;
+    width: 70%;
+    margin-bottom: 7%;
+    resize: vertical;
+    overflow-wrap: break-word;
+    line-height: 1.5;
+    font-size: 1vw;
+    margin-top: 2%;
+}
+
+.question-label {
+    font-size: 1.3vw;
+}
+
+#question {
+    height: 10%;
+}
+
+.correct {
+    font-size: 1vw;
+}
+
+#submit-question {
+    height: 4%;
+    width: 15%;
+    font-size: 0.8vw;
+}
+
+#subject {
+    height: 5%;
+    width: 50%;
+}
+
+#questionForm {
+    height: 100%;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+#homepage-link{
+    text-decoration: none;
+    color: black;
+    font-size: 2.5vw;
+}
+
+
+#questions-link {
+    font-size: 1.3vw;
+    color: black;
+    text-decoration: none;
+    
+}
+
+#logout {
+    font-size: 1.3vw;
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#logout:hover {
+    color: rgb(209, 210, 195);
+}
+
+
+#content {
+    background-color: rgb(209, 210, 195);
+    min-height: 40vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#container {
+    height: 33vw;
+    width: 30vw;
+    background-color: rgb(25, 77, 76);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.image-upload-container {
+    height: 30%;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    padding-top: 4%;
+    margin-bottom: 10%;
+}
+
+#img-preview-div {
+    height: 100%;
+    width: 33%;
+    margin-bottom: 5%;
+}
+
+#image-preview {
+    border-radius: 50%;
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+}
+
+#file-input {
+    display: none;
+}
+
+#file-label {
+    font-size: 1vw;
+}
+
+#file-label:hover {
+    cursor: pointer;
+    color: rgb(209, 210, 195);
+}
+
+#mode-box {
+    height: 30%;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 5%;
+}
+
+.mode-btn {
+    height: 20%;
+    width: 40%;
+    margin-bottom: 4%;
+    border-radius: 10px;
+    font-size: 0.9vw;
+}
+
+.mode-btn:hover {
+    scale: 120%;
+    transition: 0.2s;
+    cursor: pointer;
+}
+
+
+#footer {
+    height: 18vw;
+    background-color: rgb(25, 77, 76);
+    margin-top: auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 10% 0 5%;
+    gap: 5%;
+}
+
+#footer-logo {
+    height: 80%;
+    width: 17%;
+    margin-left: 10%;
+}
+
+#footer-img {
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+}
+
+.footer-info {
+    max-height: 100%;
+    width: 30%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    overflow: hidden;
+    gap: 7%;
+}
+
+#footer-info-container {
+    height: 100%;
+    width: 30%;
+    display: flex;
+    justify-content: center;
+    font-size: 1.3vw;
+    gap: 10%;
+}
+
+.footer-info-text {
+    margin-bottom: 1%;
+    text-decoration: none;
+    color: black;
+}
+
+.footer-info-text:hover {
+    color: rgb(209, 210, 195);
+}
+
+#slogan-div {
+    font-size: 2vw;
+    display: flex;
+    justify-content: center;
+}
+
+.disabled {
+    pointer-events: none;
+    opacity: 0.6;
+}
+
+#close-div {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: end;
+    padding-right: 5%;
+}
+
+#close {
+    font-size: 2vw;
+    margin: 0;
+    cursor: pointer;
+}
+
+.icon-div {
+    height: 30%;
+    width: 2%;
+    margin-left: -2.5%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.icons {
+    height: 100%;
+    width: 100%;
+    object-fit: contain;
+}
+
+#logout-div {
+    display: flex;
+    justify-content: center;
+}
+
+#icon-logout {
+    width: 12%;
+    margin-left: 3%;
+}
+
+.chose {
+    font-size: 1vw;
+}
+
+.chose-correct {
+    height: 15%;
+    width: 10%;
+}

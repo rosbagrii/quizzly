@@ -1,0 +1,121 @@
+
+
+body {
+    margin: 0 auto;
+    user-select: none;
+}
+
+#content {
+    background-color: rgb(209, 210, 195);
+    height: 40vw;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#container {
+    height: 65%;
+    width: 40%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background-color: wheat;
+    overflow: scroll;
+    overflow-x: hidden;
+    padding: 12% 0 0 0;
+}
+
+#questionList {
+    display: flex;
+    flex-direction: column;
+    font-size: 1vw;
+    line-height: 1.5vw;
+}
+
+#navbar {
+    height: 5vw;
+    background-color: rgb(25, 77, 76);
+    display: flex;
+    align-items: center;
+    font-size: 2.5vw;
+    justify-content: center;
+    gap: 1%;
+}
+
+#homepage-link{
+    text-decoration: none;
+    color: black;
+}
+
+
+#logo-box {
+    height: 80%;
+    width: 4%;
+}
+
+#logo {
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+}
+
+#footer {
+    height: 18vw;
+    background-color: rgb(25, 77, 76);
+    margin-top: auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 10% 0 5%;
+    gap: 5%;
+}
+
+#footer-logo {
+    height: 80%;
+    width: 17%;
+    margin-left: 10%;
+}
+
+#footer-img {
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+}
+
+.footer-info {
+    max-height: 100%;
+    width: 30%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    overflow: hidden;
+    gap: 7%;
+}
+
+#footer-info-container {
+    height: 100%;
+    width: 30%;
+    display: flex;
+    justify-content: center;
+    font-size: 1.3vw;
+    gap: 10%;
+}
+
+.footer-info-text {
+    margin-bottom: 1%;
+    text-decoration: none;
+    color: black;
+}
+
+.footer-info-text:hover {
+    color: rgb(209, 210, 195);
+}
+
+#slogan-div {
+    font-size: 2vw;
+    display: flex;
+    justify-content: center;
+}

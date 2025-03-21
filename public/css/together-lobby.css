@@ -1,0 +1,232 @@
+body {
+    margin: 0 auto;
+    overflow-x: hidden;
+}
+
+.game-label {
+    gap: 1%;
+    display: inline-flex;
+    align-items: center;
+}
+
+#main-container {
+    min-height: 40vw;
+    max-height: 100%;
+    width: 100vw;
+    display: flex;
+    justify-content: space-between;
+    background-color: rgb(209, 210, 195);
+    margin: 0 auto;
+}
+
+#left-section {
+    min-height: 100%;
+    width: 30%;
+    border-right: 1px solid black;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+}
+
+#lobby-heading {
+    font-size: 2vw;
+}
+
+#lobby-id {
+    font-size: 1.5vw;
+    margin: 0;
+}
+
+#player-count {
+    font-size: 1.7vw;
+}
+
+#start-game {
+    height: 7%;
+    width: 50%;
+}
+
+#right-section {
+    min-height: 100%;
+    width: 70%;
+    display: flex;
+    justify-content: center;
+}
+
+#container {
+    height: 90%;
+    width: 80%;
+    margin-top: 2%;
+    display: none;
+    flex-direction: column;
+}
+
+#question-box {
+    min-height: 10%;
+    width: 100%;
+    font-weight: bold;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.5vw;
+}
+
+#options-box {
+    min-height: 80%;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 15%;
+    font-size: 1.3vw;
+}
+
+#button-div {
+    min-height: 10%;
+    display: flex;
+    justify-content: center;
+    gap: 3%;
+    align-items: center;
+}
+
+button {
+    height: 30px;
+    width: 150px;
+    font-size: 1vw;
+}
+
+.navigation-buttons {
+    height: 70%;
+    width: 20%;
+}
+
+#antwort {
+    margin-left: 50px;
+}
+
+#players {
+    font-size: 1.3vw;
+    list-style-position: inside;
+    padding: 0;
+}
+
+
+
+#navbar {
+    height: 6vw;
+    background-color: rgb(25, 77, 76);
+    display: flex;
+    align-items: center;
+    font-size: 2.5vw;
+    justify-content: center;
+    gap: 1%;
+}
+
+#homepage-link{
+    text-decoration: none;
+    color: black;
+}
+
+#logo-box {
+    height: 80%;
+    width: 5%;
+}
+
+#logo {
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+}
+
+
+#footer {
+    height: 18vw;
+    background-color: rgb(25, 77, 76);
+    margin-top: auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 10% 0 5%;
+    gap: 5%;
+}
+
+#footer-logo {
+    height: 80%;
+    width: 17%;
+    margin-left: 10%;
+}
+
+#footer-img {
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+}
+
+.footer-info {
+    max-height: 100%;
+    width: 30%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    overflow: hidden;
+    gap: 7%;
+}
+
+#footer-info-container {
+    height: 100%;
+    width: 30%;
+    display: flex;
+    justify-content: center;
+    font-size: 1.3vw;
+    gap: 10%;
+}
+
+.footer-info-text {
+    margin-bottom: 1%;
+    text-decoration: none;
+    color: black;
+}
+
+.footer-info-text:hover {
+    color: rgb(209, 210, 195);
+}
+
+#slogan-div {
+    font-size: 2vw;
+    display: flex;
+    justify-content: center;
+}
+
+.disabled {
+    pointer-events: none;
+    opacity: 0.6;
+}
+
+#lobby-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1vw;
+    width: 100%;
+}
+
+#dropdown-box {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    font-size: 1.5vw;
+    gap: 0.5vw;
+    width: 50%;
+    align-items: center;
+}
+
+#dropdown {
+    width: 50%;
+    font-size: 1vw;
+}
+
+.checkbox {
+    height: 100%;
+    width: 2%;
+}
