@@ -40,27 +40,6 @@ app.get('/', (req, res) => {
     res.sendFile(path.join(__dirname, 'public', 'html', 'startseite.html'));
   });
 
-  app.get('/html/aboutUs', (req, res) => {
-    res.sendFile(path.join(__dirname, 'public', 'html', 'aboutUs.html'));
-});
-
-app.get('/html/datenschutz', (req, res) => {
-    res.sendFile(path.join(__dirname, 'public', 'html', 'datenschutz.html'));
-});
-
-app.get('/html/cookies', (req, res) => {
-    res.sendFile(path.join(__dirname, 'public', 'html', 'cookies.html'));
-});
-
-app.get('/html/impressum', (req, res) => {
-    res.sendFile(path.join(__dirname, 'public', 'html', 'impressum.html'));
-});
-
-app.get('/html/faqs', (req, res) => {
-    res.sendFile(path.join(__dirname, 'public', 'html', 'faqs.html'));
-});
-
-
 app.use('/api/auth', authRoutes);
 app.use('/api/quiz', quizRoutes);
 
