@@ -40,25 +40,25 @@ app.get('/', (req, res) => {
     res.sendFile(path.join(__dirname, 'public', 'html', 'startseite.html'));
   });
 
-app.get('/', (req, res) => {
+  app.get('/aboutUs', (req, res) => {
     res.sendFile(path.join(__dirname, 'public', 'html', 'aboutUs.html'));
-  });
+});
 
-app.get('/', (req, res) => {
+app.get('/datenschutz', (req, res) => {
     res.sendFile(path.join(__dirname, 'public', 'html', 'datenschutz.html'));
-  });
+});
 
-app.get('/', (req, res) => {
+app.get('/cookies', (req, res) => {
     res.sendFile(path.join(__dirname, 'public', 'html', 'cookies.html'));
-  });
+});
 
-app.get('/', (req, res) => {
+app.get('/impressum', (req, res) => {
     res.sendFile(path.join(__dirname, 'public', 'html', 'impressum.html'));
-  });
+});
 
-app.get('/', (req, res) => {
+app.get('/faqs', (req, res) => {
     res.sendFile(path.join(__dirname, 'public', 'html', 'faqs.html'));
-  });
+});
 
 
 app.use('/api/auth', authRoutes);
