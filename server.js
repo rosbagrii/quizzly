@@ -35,8 +35,17 @@ app.use(bodyParser.urlencoded({ limit: '10mb', extended: true }));
 app.use(express.static(path.join(__dirname, 'public')));
 
 // Routen
+
+// Route für die Startseite
+app.get('/', (req, res) => {
+    // Sende die Startseite (startseite.html) zurück
+    res.sendFile(path.join(__dirname, 'public', 'html', 'startseite.html'));
+  });
+
 app.use('/api/auth', authRoutes);
 app.use('/api/quiz', quizRoutes);
+
+
 
 // Fehlerbehandlungs-Middleware
 app.use((err, req, res, next) => {
