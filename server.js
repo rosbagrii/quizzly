@@ -40,23 +40,23 @@ app.get('/', (req, res) => {
     res.sendFile(path.join(__dirname, 'public', 'html', 'startseite.html'));
   });
 
-  app.get('/aboutUs', (req, res) => {
+  app.get('/html/aboutUs', (req, res) => {
     res.sendFile(path.join(__dirname, 'public', 'html', 'aboutUs.html'));
 });
 
-app.get('/datenschutz', (req, res) => {
+app.get('/html/datenschutz', (req, res) => {
     res.sendFile(path.join(__dirname, 'public', 'html', 'datenschutz.html'));
 });
 
-app.get('/cookies', (req, res) => {
+app.get('/html/cookies', (req, res) => {
     res.sendFile(path.join(__dirname, 'public', 'html', 'cookies.html'));
 });
 
-app.get('/impressum', (req, res) => {
+app.get('/html/impressum', (req, res) => {
     res.sendFile(path.join(__dirname, 'public', 'html', 'impressum.html'));
 });
 
-app.get('/faqs', (req, res) => {
+app.get('/html/faqs', (req, res) => {
     res.sendFile(path.join(__dirname, 'public', 'html', 'faqs.html'));
 });
 
