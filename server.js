@@ -36,11 +36,30 @@ app.use(express.static(path.join(__dirname, 'public')));
 
 // Routen
 
-// Route für die Startseite
 app.get('/', (req, res) => {
-    // Sende die Startseite (startseite.html) zurück
     res.sendFile(path.join(__dirname, 'public', 'html', 'startseite.html'));
   });
+
+app.get('/', (req, res) => {
+    res.sendFile(path.join(__dirname, 'public', 'html', 'aboutUs.html'));
+  });
+
+app.get('/', (req, res) => {
+    res.sendFile(path.join(__dirname, 'public', 'html', 'datenschutz.html'));
+  });
+
+app.get('/', (req, res) => {
+    res.sendFile(path.join(__dirname, 'public', 'html', 'cookies.html'));
+  });
+
+app.get('/', (req, res) => {
+    res.sendFile(path.join(__dirname, 'public', 'html', 'impressum.html'));
+  });
+
+app.get('/', (req, res) => {
+    res.sendFile(path.join(__dirname, 'public', 'html', 'faqs.html'));
+  });
+
 
 app.use('/api/auth', authRoutes);
 app.use('/api/quiz', quizRoutes);
