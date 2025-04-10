@@ -84,7 +84,7 @@ module.exports = function(io) {
                   }
 
                       // Fragen aus der API abrufen
-                      const response = await axios.get(`http://localhost:5001/api/quiz/multi-questions?category=${selectedCategory}`, {
+                      const response = await axios.get(`https://quizzly-production.up.railway.app/api/quiz/multi-questions?category=${encodeURIComponent(selectedCategory)}`, {
                           headers: {
                               'Authorization': `Bearer ${token}`  // Falls ein JWT benötigt wird
                           }
